@@ -5,15 +5,15 @@
 // Obras de arte. Coloque suas imagens em /img e preencha "img".
 // Enquanto "img" estiver vazio, o site desenha uma pintura generativa de exemplo.
 const ARTWORKS = [
-  { title: "Ellie e Joel - TLOU", year: 2026, technique: "digital",  medium: "Pintura digital · Procreate", ratio: 1.25, img: "img/img1.webp", desc: "Escreva aqui a história da obra: inspiração, processo, o que você queria transmitir." },
-  { title: "Cartão de aniversário para minha amiga!",        year: 2026, technique: "digital", medium: "Pintura digital · Procreate",   ratio: 0.75, img: "img/img2.webp", desc: "Descrição da obra." },
-  { title: "Retrato da gata Bigoda",  year: 2026, technique: "digital",     medium: "Pintura digital · Procreate",   ratio: 1.3,  img: "img/img3.webp", desc: "Descrição da obra." },
-  { title: "Desenho de hora de aventura",  year: 2026, technique: "digital",  medium: "Pintura digital · Procreate",  ratio: 1,    img: "img/img4.webp", desc: "Descrição da obra." },
-  { title: "Desenho de hora de aventura",      year: 2026, technique: "digital", medium: "Pintura digital · Procreate",          ratio: 1.4,  img: "img/img5.webp", desc: "Descrição da obra." },
-  { title: "Desenho de hora de aventura - Marceline e Jujuba",     year: 2026, technique: "digital",     medium: "Pintura digital · Procreate",         ratio: 0.8,  img: "img/img6.webp", desc: "Descrição da obra." },
-  { title: "Deseinhos",    year: 2026, technique: "digital",  medium: "Pintura digital · Procreate",             ratio: 1.15, img: "img/img7.webp", desc: "Descrição da obra." },
-  { title: "Kombi e Sr Pequeno ",  year: 2026, technique: "digital", medium: "Pintura digital · Procreate",        ratio: 1,    img: "img/img8.webp", desc: "Descrição da obra." },
-  { title: "Help Cola",      year: 2026, technique: "digital",     medium: "Pintura digital · Procreate",             ratio: 1.25, img: "img/img9.webp", desc: "Descrição da obra." },
+  { title: "Ellie e Joel - TLOU", year: 2026, technique: "digital",  medium: "Pintura digital · Procreate", ratio: 1.25, img: "img/img1.webp", desc: "Foi um dos meus primeiros desenhos digitais, inspirado no meu jogo favorito The Last Of Us!" },
+  { title: "Cartão de aniversário para minha amiga!",        year: 2026, technique: "digital", medium: "Pintura digital · Procreate",   ratio: 0.75, img: "img/img2.webp", desc: "Fiz em pouco tempo, mas gostei muito da textura que usei e do estilo de traço." },
+  { title: "Retrato da gata Bigoda",  year: 2026, technique: "digital",     medium: "Pintura digital · Procreate",   ratio: 1.3,  img: "img/img3.webp", desc: "Estava experimentando diversos estilos de desenho e conhecendo o Procrate, foi aí que meu tio Tom (também desenhista) me deu a ideia de desenhar a gata dele!" },
+  { title: "Desenho de hora de aventura",  year: 2026, technique: "digital",  medium: "Pintura digital · Procreate",  ratio: 1,    img: "img/img4.webp", desc: "Adoro fazer desenhos assim para postar na minha conta do Instagram, com meu desenho favorito, Hora de Aventura." },
+  { title: "Desenho de hora de aventura",      year: 2026, technique: "digital", medium: "Pintura digital · Procreate",          ratio: 1.4,  img: "img/img5.webp", desc: "Mais desenhos pra dumps!" },
+  { title: "Desenho de hora de aventura - Marceline e Jujuba",     year: 2026, technique: "digital",     medium: "Pintura digital · Procreate",         ratio: 0.8,  img: "img/img6.webp", desc: "A história desse desenho é MUITO LEGAL! Fiz para participar de um concurso de desenho que a Cartoon Network Brasil tinha publicado no Insta, com tema Princesa Jujuba e Marceline. Meu desenho foi parar na conta oficial deles, fiquei muito orgulhosa, surreal!!" },
+  { title: "Deseinhos",    year: 2026, technique: "digital",  medium: "Pintura digital · Procreate",             ratio: 1.15, img: "img/img7.webp", desc: "Gosto muito dessas ilustraçõezinhas, nessa tive ajuda de uma pessoa muito importante, mas é segredo!" },
+  { title: "Kombi e Sr Pequeno ",  year: 2026, technique: "digital", medium: "Pintura digital · Procreate",        ratio: 1,    img: "img/img8.webp", desc: "Mais um pro dump, achei essa kombi bonitinha, dentro do campus da minha faculdade e acho que o Senhor Pequeno com certeza teria uma igual!" },
+  { title: "Help Cola",      year: 2026, technique: "digital",     medium: "Pintura digital · Procreate",             ratio: 1.25, img: "img/img9.webp", desc: "AAAAAAAAAAAH!" },
 ];
 
 // Projetos de Ciência da Computação.
