@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lara — Arte & Código</title>
+  <meta name="description" content="Portfólio de ilustração e pintura integrado a projetos de Ciência da Computação.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#arte">Pular para o conteúdo</a>
+
+  <header class="nav" id="topo">
+    <a class="nav__logo" href="#topo" aria-label="Início">
+      <span class="logo-mark">✦</span> Lara
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#arte">Arte</a>
+      <a href="#codigo">Código</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">◐</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__collage">
+        <span class="tape tape--tl" aria-hidden="true"></span>
+        <span class="tape tape--tr" aria-hidden="true"></span>
+        <div class="hero__content torn">
+          <p class="eyebrow mono">// ilustração · ciência da computação</p>
+          <h1 class="hero__title">
+            A arte de criar <em>ilustrações</em><br>
+            e <span class="code-word">códigos</span>.
+          </h1>
+          <p class="hero__lead">
+            Ilustração digital e desenvolvimento de software:
+            duas formas de transformar ideias em realidade!
+          </p>
+        </div>
+        <p class="hand hero__note">↖ esse fundo é feito com código! passa o mouse ♡</p>
+      </div>
+
+      <div class="stickers" aria-hidden="true">
+        <span class="sticker sticker--badge">
+          <svg viewBox="0 0 100 100">
+            <defs><path id="circ" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0"/></defs>
+            <text><textPath href="#circ">arte ✦ código ✦ arte ✦ código ✦</textPath></text>
+          </svg>
+          <b>♥</b>
+        </span>
+        <span class="sticker sticker--star">✦</span>
+        <span class="sticker sticker--label mono">&lt;3 made by hand</span>
+      </div>
+    </section>
+
+    <!-- DUAS PORTAS -->
+    <section class="doors" aria-label="Escolha um caminho">
+      <a class="door door--art" href="#arte">
+        <span class="door__num mono">01</span>
+        <span class="door__title">Arte</span>
+        <span class="door__desc">Ilustrações e pinturas — digitais e tradicionais.</span>
+        <span class="door__arrow">→</span>
+      </a>
+      <a class="door door--code" href="#codigo">
+        <span class="door__num mono">02</span>
+        <span class="door__title mono">&lt;Código/&gt;</span>
+        <span class="door__desc">Projetos, pesquisa e experiência em Ciência da Computação.</span>
+        <span class="door__arrow">→</span>
+      </a>
+    </section>
+
+    <!-- ARTE -->
+    <section class="section" id="arte">
+      <div class="section__head">
+        <p class="eyebrow mono">01 — Arte</p>
+        <h2>Galeria</h2>
+        <span class="hand section__note">✿ minhas favoritas</span>
+        <p class="section__lead">Uma seleção de trabalhos recentes. Clique numa obra para ver em detalhe.</p>
+      </div>
+
+      <div class="filters" role="toolbar" aria-label="Filtrar obras">
+        <button class="chip is-active" data-filter="todas">Todas</button>
+        <button class="chip" data-filter="digital">Digital</button>
+        <button class="chip" data-filter="aquarela">Aquarela</button>
+        <button class="chip" data-filter="oleo">Óleo / acrílica</button>
+      </div>
+
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <!-- CÓDIGO -->
+    <section class="section section--code" id="codigo">
+      <div class="section__head">
+        <p class="eyebrow mono">02 — Código</p>
+        <h2>Projetos</h2>
+        <span class="hand section__note">bugs resolvidos com amor ✧</span>
+        <p class="section__lead">Software que construí — de sistemas a experimentos visuais.</p>
+      </div>
+
+      <div class="projects" id="projects"></div>
+
+      <div class="skills">
+        <div class="skills__group">
+          <h3 class="mono">linguagens</h3>
+          <ul class="tags"><li>Python</li><li>JavaScript / TypeScript</li><li>Java</li><li>C / C++</li><li>SQL</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="mono">áreas</h3>
+          <ul class="tags"><li>Computação gráfica</li><li>Visão computacional</li><li>Desenvolvimento web</li><li>IHC / UX</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="mono">ferramentas criativas</h3>
+          <ul class="tags"><li>Procreate</li><li>Krita</li><li>p5.js</li><li>Three.js</li><li>Figma</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="about">
+        <div class="about__portrait polaroid">
+          <canvas id="portraitCanvas" aria-label="Espaço reservado para sua foto"></canvas>
+          <span class="hand about__caption">Eu!</span>
+        </div>
+        <div class="about__text">
+          <p class="eyebrow mono">03 — Sobre</p>
+          <h2>Entre a tela e o terminal</h2>
+          <p>
+            Desenho, pinto e programo — trabalho com ilustração e Ciência da Computação. A arte 
+            e a tecnologia sempre fizeram parte da minha vida, desde a infância. Foi aí que pensei,
+            o que me impede de juntar as duas áreas que eu mais gosto e apresentar para o mundo?
+          </p>
+          <p>
+            E aí, o que achou?
+          </p>
+          <a class="btn" href="curriculo.pdf" download>Baixar currículo (PDF)</a>
+        </div>
+      </div>
+
+      <ol class="timeline">
+        <li><span class="timeline__year mono">2026</span><span class="timeline__tag tag-code">experiência</span><strong>Cargo / Estágio</strong> — Cargo como estágiaria no Parquetec - voltado ao estudo de linguagens para a Maratona de programação.</li>
+        <li><span class="timeline__year mono">2026</span><span class="timeline__tag tag-art">acadêmico</span><strong>Universidade</strong> — Unioeste - Início da minha jornada no estudo da Ciência da Computação.</li>
+        <li><span class="timeline__year mono">2023-2025</span><span class="timeline__tag tag-code">acadêmico</span><strong>Ensino Médio</strong> — Estudei no colégio Anglo Americano, de Foz do Iguaçu, durante o ensino médio!</li>
+        <li><span class="timeline__year mono">2019-2023</span><span class="timeline__tag tag-both">línguas</span><strong>Inglês</strong> — Estudei durante 4 anos Inglês na Wizard - atualmente formada, onde fui convidada para trabalhar, mas não atuei.</li>
+      </ol>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+      <p class="eyebrow mono">04 — Contato</p>
+      <h2>Vamos criar algo juntos?</h2>
+      <p class="section__lead">Encomendas de ilustração, vagas em tecnologia ou só um oi.</p>
+      <a class="contact__mail" href="mailto:terhaaglara@gmail.com">terhaaglara@gmail.com</a>
+      <ul class="socials">
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.artstation.com/" target="_blank" rel="noopener">ArtStation</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year"></span> Seu Nome</span>
+    <span>feito à mão, em HTML, CSS e JS</span>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">×</button>
+    <div class="lightbox__media" id="lightboxMedia"></div>
+    <div class="lightbox__info">
+      <h3 id="lightboxTitle"></h3>
+      <p class="mono" id="lightboxMeta"></p>
+      <p id="lightboxDesc"></p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
